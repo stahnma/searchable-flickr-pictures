@@ -16,7 +16,7 @@ ollama pull moondream
 # 3. Start Ollama and the API server
 flox services start
 
-# 4. Set your Flickr feed URL (find your ID at idgettr.com)
+# 4. Set your Flickr feed URL (find your ID at webfx.com/tools/idgettr)
 echo 'FLICKR_FEED_URL=https://api.flickr.com/services/feeds/photos_public.gne?id=YOUR_FLICKR_ID&format=atom' > .env
 
 # 5. Index your photos
@@ -121,11 +121,17 @@ Set via environment variables or a `.env` file:
 
 ## Finding your Flickr ID
 
-Your Flickr ID (e.g., `12345678@N00`) is not the same as your username. To find it:
+Your Flickr ID (e.g., `12345678@N00`) is not the same as your username or URL path. For example, `https://flickr.com/photos/jwfc/` uses the alias `jwfc`, but the actual Flickr ID is something like `30378931@N00`.
 
-1. Go to [idgettr.com](https://www.idgettr.com)
+To find your numeric ID:
+
+1. Go to [idGettr](https://www.webfx.com/tools/idgettr/)
 2. Paste your Flickr profile URL (e.g., `https://flickr.com/photos/yourname/`)
-3. Use the returned ID in your feed URL
+3. The tool returns your numeric Flickr ID
+4. Use that ID in your feed URL:
+   ```
+   https://api.flickr.com/services/feeds/photos_public.gne?id=YOUR_FLICKR_ID&format=atom
+   ```
 
 ## Running tests
 
