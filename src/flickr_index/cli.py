@@ -20,17 +20,20 @@ def serve(host: str, port: int):
 
 
 @cli.command()
-@click.option("--feed-url", required=True, help="Flickr RSS feed URL")
+@click.option("--feed-url", default=None, help="Flickr RSS feed URL (or set FLICKR_FEED_URL)")
 @click.option("--data-dir", default=None, help="ChromaDB data directory")
-def index(feed_url: str, data_dir: str | None):
+def index(feed_url: str | None, data_dir: str | None):
     """Index photos from a Flickr RSS feed."""
     settings = Settings()
+    url = feed_url or settings.flickr_feed_url
+    if not url:
+        raise click.UsageError("No feed URL provided. Pass --feed-url or set FLICKR_FEED_URL in .env")
     store = PhotoStore(persist_dir=data_dir or settings.data_dir)
 
     from flickr_index.indexer import Indexer
 
     indexer = Indexer(store=store)
-    result = indexer.run(feed_url)
+    result = indexer.run(url)
     click.echo(f"Indexed: {result['indexed']}, Skipped: {result['skipped']}, Errors: {result['errors']}")
 
 

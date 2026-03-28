@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "Index Flickr photos with AI-generated descriptions for semantic search"
 requires-python = ">=3.12"
 dependencies = [
-    "moondream>=0.0.1",
     "click>=8.0",
     "httpx>=0.28.1",
 ]

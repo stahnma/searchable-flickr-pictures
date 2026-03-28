@@ -13,6 +13,8 @@ python312.pkg-path = "python312"
 uvicorn.pkg-path = "python312Packages.uvicorn"
 chromadb.pkg-path = "python312Packages.chromadb"
 uv.pkg-path = "uv"
+python-dotenv.pkg-path = "python312Packages.python-dotenv"
+ollama.pkg-path = "ollama"
 # gum.pkg-path = "gum"
 # gum.version = "^0.14.5"
 
@@ -61,7 +63,8 @@ on-activate = '''
 ##  $ flox activate --start-services  <- Activates & starts all
 ## ------------------------------------------------------------------
 [services]
-# myservice.command = "python3 -m http.server"
+ollama.command = "ollama serve"
+api.command = "flickr-index serve"
 
 
 ## Include ----------------------------------------------------------

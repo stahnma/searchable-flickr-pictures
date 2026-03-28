@@ -32,10 +32,10 @@ def test_index_skips_existing():
 
         indexer = Indexer.__new__(Indexer)
         indexer.store = store
-        indexer.model = MagicMock()
+        indexer.model = "moondream"
+        indexer.ollama_url = "http://localhost:11434"
 
         entries = [{"photo_id": "12345", "title": "Test", "flickr_url": "http://example.com", "image_url": "http://example.com/img.jpg", "published": "2026-03-01"}]
         result = indexer.index_entries(entries)
         assert result["skipped"] == 1
         assert result["indexed"] == 0
-        indexer.model.caption.assert_not_called()

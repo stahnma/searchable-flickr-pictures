@@ -12,6 +12,12 @@
       "feedparser": {
         "pkg-path": "python312Packages.feedparser"
       },
+      "ollama": {
+        "pkg-path": "ollama"
+      },
+      "python-dotenv": {
+        "pkg-path": "python312Packages.python-dotenv"
+      },
       "python312": {
         "pkg-path": "python312"
       },
@@ -22,7 +28,9 @@
         "pkg-path": "python312Packages.uvicorn"
       }
     },
-    "hook": {},
+    "hook": {
+      "on-activate": "  if [ ! -d \"$FLOX_ENV_PROJECT/.venv\" ]; then\n    uv venv \"$FLOX_ENV_PROJECT/.venv\"\n    uv pip install -e \"$FLOX_ENV_PROJECT\"\n  fi\n  export PATH=\"$FLOX_ENV_PROJECT/.venv/bin:$PATH\"\n  export VIRTUAL_ENV=\"$FLOX_ENV_PROJECT/.venv\"\n"
+    },
     "profile": {},
     "options": {}
   },
@@ -384,6 +392,244 @@
       "outputs": {
         "dist": "/nix/store/v3aqsm67qqd885kkyad1g480hqgamslc-python3.12-feedparser-6.0.12-dist",
         "out": "/nix/store/jqxck0i2qwi9mvdajd1ahznn495a2jp1-python3.12-feedparser-6.0.12"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ollama",
+      "broken": false,
+      "derivation": "/nix/store/5iihvrjgcp5can972hmsnmjsc178f8ml-ollama-0.13.5.drv",
+      "description": "Get up and running with large language models locally",
+      "install_id": "ollama",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "ollama-0.13.5",
+      "pname": "ollama",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:03:02.790524Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/k02j91b7s8kpk8ipswnn2df7vg9922va-ollama-0.13.5"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ollama",
+      "broken": false,
+      "derivation": "/nix/store/jp9q5ak5j78cbacnz4yhgn0gd7dw503v-ollama-0.13.5.drv",
+      "description": "Get up and running with large language models locally",
+      "install_id": "ollama",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "ollama-0.13.5",
+      "pname": "ollama",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:18:42.022694Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/3wyah4la0lsvxpcmzw7h80zkzcpdpwqq-ollama-0.13.5"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ollama",
+      "broken": false,
+      "derivation": "/nix/store/rlss85arcg0nn177cx5f29cvb94pdmsn-ollama-0.13.5.drv",
+      "description": "Get up and running with large language models locally",
+      "install_id": "ollama",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "ollama-0.13.5",
+      "pname": "ollama",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:35:20.697819Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/9v7gynmmx0rnmnyh6q2lf16xpxsnv32v-ollama-0.13.5"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "ollama",
+      "broken": false,
+      "derivation": "/nix/store/b5zb5a4w800x197g3ipyq24a16jc5h21-ollama-0.13.5.drv",
+      "description": "Get up and running with large language models locally",
+      "install_id": "ollama",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "ollama-0.13.5",
+      "pname": "ollama",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:51:01.918164Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.13.5",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/ak07inzl66lq1bj06ys7rcsgkpwxrczb-ollama-0.13.5"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.python-dotenv",
+      "broken": false,
+      "derivation": "/nix/store/x4i90hf9a04dj21iy6slhgsnid4hdzz0-python3.12-python-dotenv-1.1.1.drv",
+      "description": "Add .env support to your django/flask apps in development and deployments",
+      "install_id": "python-dotenv",
+      "license": "BSD-4-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-python-dotenv-1.1.1",
+      "pname": "python-dotenv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:03:28.780637Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/95jz72cjid5gbkx3xff1spvzl3ccrk34-python3.12-python-dotenv-1.1.1-dist",
+        "out": "/nix/store/q0cybfq3qyianzk1rrsnak3qlkip56p4-python3.12-python-dotenv-1.1.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.python-dotenv",
+      "broken": false,
+      "derivation": "/nix/store/n31wlyz9pyaasxhyx9mdsdf5fxk91xl8-python3.12-python-dotenv-1.1.1.drv",
+      "description": "Add .env support to your django/flask apps in development and deployments",
+      "install_id": "python-dotenv",
+      "license": "BSD-4-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-python-dotenv-1.1.1",
+      "pname": "python-dotenv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:19:20.732195Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/4pai89dm0ra34qnwd0dly8q5s3fk5jrv-python3.12-python-dotenv-1.1.1-dist",
+        "out": "/nix/store/mq7s3nd5kw05g1z0ph9j3rvfwzh9amsw-python3.12-python-dotenv-1.1.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.python-dotenv",
+      "broken": false,
+      "derivation": "/nix/store/20phrxwc8wy6cms9xc3rlnn24x36b489-python3.12-python-dotenv-1.1.1.drv",
+      "description": "Add .env support to your django/flask apps in development and deployments",
+      "install_id": "python-dotenv",
+      "license": "BSD-4-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-python-dotenv-1.1.1",
+      "pname": "python-dotenv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:35:48.670668Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.1.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/4kx2gzy00yxrfa8177sx523z5xl8zvmy-python3.12-python-dotenv-1.1.1-dist",
+        "out": "/nix/store/rkixm833m28s1j4l0bah7sjfxsy9hm4w-python3.12-python-dotenv-1.1.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.python-dotenv",
+      "broken": false,
+      "derivation": "/nix/store/v3njmghsw34pbsvc3yq50qb23frzxndv-python3.12-python-dotenv-1.1.1.drv",
+      "description": "Add .env support to your django/flask apps in development and deployments",
+      "install_id": "python-dotenv",
+      "license": "BSD-4-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-python-dotenv-1.1.1",
+      "pname": "python-dotenv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:51:39.085084Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.1.1",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/1fr2azc74lz37zyb25bwiiy85vq0ap5w-python3.12-python-dotenv-1.1.1-dist",
+        "out": "/nix/store/a74pi9iyp1q449x745xnifppjqy6lg7k-python3.12-python-dotenv-1.1.1"
       },
       "system": "x86_64-linux",
       "group": "toplevel",

@@ -2,7 +2,9 @@ import os
 from flickr_index.config import Settings
 
 
-def test_default_settings():
+def test_default_settings(monkeypatch):
+    monkeypatch.delenv("FLICKR_FEED_URL", raising=False)
+    monkeypatch.delenv("DATA_DIR", raising=False)
     settings = Settings()
     assert settings.data_dir == "./data/chromadb"
     assert settings.flickr_feed_url is None

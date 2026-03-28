@@ -1,19 +1,21 @@
+import base64
+import json
 import re
 from datetime import datetime, timezone
-from io import BytesIO
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 import feedparser
-import moondream as md
-from PIL import Image
 
 from flickr_index.store import PhotoStore
 
+OLLAMA_URL = "http://localhost:11434"
+
 
 class Indexer:
-    def __init__(self, store: PhotoStore, model_name: str = "vikhyat/moondream2"):
+    def __init__(self, store: PhotoStore, model: str = "moondream", ollama_url: str = OLLAMA_URL):
         self.store = store
-        self.model = md.vl(model=model_name)
+        self.model = model
+        self.ollama_url = ollama_url
 
     def fetch_feed(self, feed_url: str) -> str:
         with urlopen(feed_url) as response:
@@ -73,10 +75,21 @@ class Indexer:
     def _describe_image(self, image_url: str) -> str:
         with urlopen(image_url) as response:
             image_data = response.read()
-        image = Image.open(BytesIO(image_data))
-        encoded = self.model.encode_image(image)
-        caption = self.model.caption(encoded)["caption"]
-        return caption
+        image_b64 = base64.b64encode(image_data).decode("utf-8")
+        payload = json.dumps({
+            "model": self.model,
+            "prompt": "Describe this image in detail for use as alt-text and search indexing.",
+            "images": [image_b64],
+            "stream": False,
+        }).encode("utf-8")
+        req = Request(
+            f"{self.ollama_url}/api/generate",
+            data=payload,
+            headers={"Content-Type": "application/json"},
+        )
+        with urlopen(req) as response:
+            result = json.loads(response.read().decode("utf-8"))
+        return result["response"]
 
     def _extract_photo_id(self, entry) -> str | None:
         # Try the Atom ID field: tag:flickr.com,2005:/photo/12345
