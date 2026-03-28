@@ -1,0 +1,16 @@
+[project]
+name = "flickr-index"
+version = "0.1.0"
+description = "Index Flickr photos with AI-generated descriptions for semantic search"
+requires-python = ">=3.12"
+dependencies = [
+    "moondream>=0.0.1",
+    "click>=8.0",
+]
+
+[project.scripts]
+flickr-index = "flickr_index.cli:cli"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
