@@ -1,0 +1,756 @@
+{
+  "lockfile-version": 1,
+  "manifest": {
+    "schema-version": "1.11.0",
+    "install": {
+      "chromadb": {
+        "pkg-path": "python312Packages.chromadb"
+      },
+      "fastapi": {
+        "pkg-path": "python312Packages.fastapi"
+      },
+      "feedparser": {
+        "pkg-path": "python312Packages.feedparser"
+      },
+      "python312": {
+        "pkg-path": "python312"
+      },
+      "uv": {
+        "pkg-path": "uv"
+      },
+      "uvicorn": {
+        "pkg-path": "python312Packages.uvicorn"
+      }
+    },
+    "hook": {},
+    "profile": {},
+    "options": {}
+  },
+  "packages": [
+    {
+      "attr_path": "python312Packages.chromadb",
+      "broken": false,
+      "derivation": "/nix/store/5nm3q14lfkkr6d24qjpg1k2l64fdx12n-python3.12-chromadb-1.3.7.drv",
+      "description": "AI-native open-source embedding database",
+      "install_id": "chromadb",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-chromadb-1.3.7",
+      "pname": "chromadb",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:03:18.024477Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.3.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/ffv1klz88cjmn9dl1rs54fsmf0h2iagq-python3.12-chromadb-1.3.7-dist",
+        "out": "/nix/store/iy0cy7mwv8zwvlqgqcg2k77dmznfh28s-python3.12-chromadb-1.3.7"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.chromadb",
+      "broken": false,
+      "derivation": "/nix/store/pnha8bb5d4xs19j9wix8kg9kvd3sj4v6-python3.12-chromadb-1.3.7.drv",
+      "description": "AI-native open-source embedding database",
+      "install_id": "chromadb",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-chromadb-1.3.7",
+      "pname": "chromadb",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:19:05.398599Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.3.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/vhg1xn529xdqg41bsh6wyn0lg34w5dpk-python3.12-chromadb-1.3.7-dist",
+        "out": "/nix/store/y0qzy774cik6838sfq48alc1f1n1siin-python3.12-chromadb-1.3.7"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.chromadb",
+      "broken": false,
+      "derivation": "/nix/store/3aimfhawv14rj4zfqdnzx24z0bwd7aga-python3.12-chromadb-1.3.7.drv",
+      "description": "AI-native open-source embedding database",
+      "install_id": "chromadb",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-chromadb-1.3.7",
+      "pname": "chromadb",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:35:36.983401Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.3.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/rn12cwm9y1jcfdk3api6w99kxhlzf1cr-python3.12-chromadb-1.3.7-dist",
+        "out": "/nix/store/6c07avpn4vlyyfp4pmaz5ms8dzw5qddj-python3.12-chromadb-1.3.7"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.chromadb",
+      "broken": false,
+      "derivation": "/nix/store/pvaj7z1mgiayxvshf364fhrarnpqmnlj-python3.12-chromadb-1.3.7.drv",
+      "description": "AI-native open-source embedding database",
+      "install_id": "chromadb",
+      "license": "Apache-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-chromadb-1.3.7",
+      "pname": "chromadb",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:51:24.550471Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "1.3.7",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/hmz4gdw38mqyzgfggshjz4v4wdag2kdl-python3.12-chromadb-1.3.7-dist",
+        "out": "/nix/store/2lnp7pnich7pighngwx6k4pcqhvrz7h8-python3.12-chromadb-1.3.7"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.fastapi",
+      "broken": false,
+      "derivation": "/nix/store/f8qm263xs1a7981lg23s3igjmqq4jp17-python3.12-fastapi-0.116.1.drv",
+      "description": "Web framework for building APIs",
+      "install_id": "fastapi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-fastapi-0.116.1",
+      "pname": "fastapi",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:03:20.153047Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.116.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/vksqfkxjwswx29011k4h27z0y6s84i60-python3.12-fastapi-0.116.1-dist",
+        "out": "/nix/store/ckl8v556bippk8yp0igz01ypjawlx5w2-python3.12-fastapi-0.116.1"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.fastapi",
+      "broken": false,
+      "derivation": "/nix/store/a0b3k94vqdwg3ch15kyq13jhqwwa9g84-python3.12-fastapi-0.116.1.drv",
+      "description": "Web framework for building APIs",
+      "install_id": "fastapi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-fastapi-0.116.1",
+      "pname": "fastapi",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:19:08.405918Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.116.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/xjvwhw9ndhfw98y8wiyjpqwwcmr2d7gf-python3.12-fastapi-0.116.1-dist",
+        "out": "/nix/store/qs0aqd25cbf4l39pavc5xswpyxkzy2xn-python3.12-fastapi-0.116.1"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.fastapi",
+      "broken": false,
+      "derivation": "/nix/store/glswy4c5rb79mjvrvxs08g5nbybdk7zj-python3.12-fastapi-0.116.1.drv",
+      "description": "Web framework for building APIs",
+      "install_id": "fastapi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-fastapi-0.116.1",
+      "pname": "fastapi",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:35:39.275317Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.116.1",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/0z89nax1dira72vkvsm4wpbyb8hg97lp-python3.12-fastapi-0.116.1-dist",
+        "out": "/nix/store/nfykq2rbxg5x3imm0z1g3m01nlq8n92a-python3.12-fastapi-0.116.1"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.fastapi",
+      "broken": false,
+      "derivation": "/nix/store/sl949jq206rnw8qyv9p9krn2psaz3ddq-python3.12-fastapi-0.116.1.drv",
+      "description": "Web framework for building APIs",
+      "install_id": "fastapi",
+      "license": "MIT",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-fastapi-0.116.1",
+      "pname": "fastapi",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:51:27.454995Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.116.1",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/mxzckqln1fpmc669bcdxq5da5wkl50lk-python3.12-fastapi-0.116.1-dist",
+        "out": "/nix/store/pv3zpp90qpf4ff0ymsjdpcip75x0rs4y-python3.12-fastapi-0.116.1"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.feedparser",
+      "broken": false,
+      "derivation": "/nix/store/4fdz200yfmac4pkmxjwi8g5khb3wql4b-python3.12-feedparser-6.0.12.drv",
+      "description": "Universal feed parser",
+      "install_id": "feedparser",
+      "license": "BSD-2-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-feedparser-6.0.12",
+      "pname": "feedparser",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:03:20.241287Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "6.0.12",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/q1vllcg0sq4kyiv1bw0s7jjjq2bqscdk-python3.12-feedparser-6.0.12-dist",
+        "out": "/nix/store/hlm3dpdjsznymnldqhiay15j37v6w09h-python3.12-feedparser-6.0.12"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.feedparser",
+      "broken": false,
+      "derivation": "/nix/store/kd2pbqvggq0nf0kd1dm27zqdfrakmgh3-python3.12-feedparser-6.0.12.drv",
+      "description": "Universal feed parser",
+      "install_id": "feedparser",
+      "license": "BSD-2-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-feedparser-6.0.12",
+      "pname": "feedparser",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:19:08.524209Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "6.0.12",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/wba9y64sg95y9197jxanp2wbccy8drg8-python3.12-feedparser-6.0.12-dist",
+        "out": "/nix/store/s4wi6j9frnirc18i3zwwv2a2k7a4j5px-python3.12-feedparser-6.0.12"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.feedparser",
+      "broken": false,
+      "derivation": "/nix/store/dy5j702dcp9qw21isar1pwqz24znilbh-python3.12-feedparser-6.0.12.drv",
+      "description": "Universal feed parser",
+      "install_id": "feedparser",
+      "license": "BSD-2-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-feedparser-6.0.12",
+      "pname": "feedparser",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:35:39.375382Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "6.0.12",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/c4svn5av2h328ag5d144vf0p82v8vpn5-python3.12-feedparser-6.0.12-dist",
+        "out": "/nix/store/jalf722xfl2s1cnjfb595nqxk2vjq33l-python3.12-feedparser-6.0.12"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.feedparser",
+      "broken": false,
+      "derivation": "/nix/store/64k0rmp6rb7mbd9v3jgzp6hpmwhscggx-python3.12-feedparser-6.0.12.drv",
+      "description": "Universal feed parser",
+      "install_id": "feedparser",
+      "license": "BSD-2-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-feedparser-6.0.12",
+      "pname": "feedparser",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:51:27.570531Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "6.0.12",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/v3aqsm67qqd885kkyad1g480hqgamslc-python3.12-feedparser-6.0.12-dist",
+        "out": "/nix/store/jqxck0i2qwi9mvdajd1ahznn495a2jp1-python3.12-feedparser-6.0.12"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312",
+      "broken": false,
+      "derivation": "/nix/store/f25f08rfsb8clpzk58a6cn7n77pff0la-python3-3.12.12.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python312",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3-3.12.12",
+      "pname": "python312",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:03:16.033520Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "python3-3.12.12",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/nrk1773m026hlgkk7vlpvc2s6zlwf1rh-python3-3.12.12"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312",
+      "broken": false,
+      "derivation": "/nix/store/0a317qcysbjphac3yya2dpprl3iv8iyp-python3-3.12.12.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python312",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3-3.12.12",
+      "pname": "python312",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:19:02.410517Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "python3-3.12.12",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/b26kb9x8r02z43r0jjkj08rc5g1vf6ig-python3-3.12.12-debug",
+        "out": "/nix/store/yyns9w3mfdxn5jwqa3lbp461wq9nl5p7-python3-3.12.12"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312",
+      "broken": false,
+      "derivation": "/nix/store/wfb2rxw4199a81is5xzl8yks0v92bk9x-python3-3.12.12.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python312",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3-3.12.12",
+      "pname": "python312",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:35:34.826718Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "python3-3.12.12",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/978h7w9sbz3f6qi6ra4pp6prqflgqyqq-python3-3.12.12"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312",
+      "broken": false,
+      "derivation": "/nix/store/pi5k7rgslg1wrrksmnrw1gfihc2lrdfi-python3-3.12.12.drv",
+      "description": "High-level dynamically-typed programming language",
+      "install_id": "python312",
+      "license": "Python-2.0",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3-3.12.12",
+      "pname": "python312",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:51:21.778026Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "python3-3.12.12",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "debug": "/nix/store/y2128xkl79k97arhvrsq2p2rmr0dim75-python3-3.12.12-debug",
+        "out": "/nix/store/fdibxyh7xcmqrc172y78awzhxs292gq1-python3-3.12.12"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/rqzgrxqq2l9lxzcv8bbrnwvgcj8w3a96-uv-0.9.18.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "uv-0.9.18",
+      "pname": "uv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:04:55.058916Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.18",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/8p7xc548qhrs4ns82bamyxnjm1h6w16s-uv-0.9.18"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/cjjwngf8ps9cpd1k1k6qs697aifg9zk1-uv-0.9.18.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "uv-0.9.18",
+      "pname": "uv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:21:21.783651Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.18",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/s2r0d03va9llzxbvjwd2ncpmn3nysnp6-uv-0.9.18"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/w05vjal3263h2n42kwf045rbrhq29mj6-uv-0.9.18.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "uv-0.9.18",
+      "pname": "uv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:37:23.142312Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.18",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/wz27b8hmvng619crzsfcdh9vywdakxa3-uv-0.9.18"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "uv",
+      "broken": false,
+      "derivation": "/nix/store/9vxkqap107i2h1y88sqg8449i7fm62hi-uv-0.9.18.drv",
+      "description": "Extremely fast Python package installer and resolver, written in Rust",
+      "install_id": "uv",
+      "license": "[ Apache-2.0, MIT ]",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "uv-0.9.18",
+      "pname": "uv",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:53:32.868971Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.9.18",
+      "outputs_to_install": [
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "out": "/nix/store/hba3r60zyn9mcqp2s71qwv7rlkv3qskn-uv-0.9.18"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.uvicorn",
+      "broken": false,
+      "derivation": "/nix/store/4bj2n6mqw0gw6r4qivl7rxwrwk2dl9vj-python3.12-uvicorn-0.35.0.drv",
+      "description": "Lightning-fast ASGI server",
+      "install_id": "uvicorn",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-uvicorn-0.35.0",
+      "pname": "uvicorn",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:03:33.838377Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.35.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/4xhvdhr6rynxlrbs1hjsvr3a5yadiczr-python3.12-uvicorn-0.35.0-dist",
+        "out": "/nix/store/wbvg7rs3yd2lavcghfpl375ckw4v6yyw-python3.12-uvicorn-0.35.0",
+        "testsout": "/nix/store/i2xarcvz2r5n4n7y1qb2sbcrzzyhd0v3-python3.12-uvicorn-0.35.0-testsout"
+      },
+      "system": "aarch64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.uvicorn",
+      "broken": false,
+      "derivation": "/nix/store/2r3fp34ld3slvckbl8pdcj72lrcbr4r0-python3.12-uvicorn-0.35.0.drv",
+      "description": "Lightning-fast ASGI server",
+      "install_id": "uvicorn",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-uvicorn-0.35.0",
+      "pname": "uvicorn",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:19:27.880525Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.35.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/lwc0ihgya110f15dwv4gljmgkg6667hc-python3.12-uvicorn-0.35.0-dist",
+        "out": "/nix/store/9qjl3cxfx15m5nbnqpv4x3nbyzbk68dy-python3.12-uvicorn-0.35.0",
+        "testsout": "/nix/store/ir3vzsbd0wjpwm72rmwi26hzj6mpcnya-python3.12-uvicorn-0.35.0-testsout"
+      },
+      "system": "aarch64-linux",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.uvicorn",
+      "broken": false,
+      "derivation": "/nix/store/f7n44vb8ldy7qd1n98ydmbv6a2qyd8db-python3.12-uvicorn-0.35.0.drv",
+      "description": "Lightning-fast ASGI server",
+      "install_id": "uvicorn",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-uvicorn-0.35.0",
+      "pname": "uvicorn",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:35:54.134417Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.35.0",
+      "outputs_to_install": [
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/xk9ai3wzivcx32l2lcr67n54z2k546h4-python3.12-uvicorn-0.35.0-dist",
+        "out": "/nix/store/f1dpas3kz7wnbd7gypnyiv84qbis016s-python3.12-uvicorn-0.35.0",
+        "testsout": "/nix/store/mknlm8ra84sn8rdpdc65z3525gsvxmzj-python3.12-uvicorn-0.35.0-testsout"
+      },
+      "system": "x86_64-darwin",
+      "group": "toplevel",
+      "priority": 5
+    },
+    {
+      "attr_path": "python312Packages.uvicorn",
+      "broken": false,
+      "derivation": "/nix/store/an6r7j4nfwbjcyf7vlb7k0lcz04y5pr8-python3.12-uvicorn-0.35.0.drv",
+      "description": "Lightning-fast ASGI server",
+      "install_id": "uvicorn",
+      "license": "BSD-3-Clause",
+      "locked_url": "https://github.com/flox/nixpkgs?rev=c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "name": "python3.12-uvicorn-0.35.0",
+      "pname": "uvicorn",
+      "rev": "c0b0e0fddf73fd517c3471e546c0df87a42d53f4",
+      "rev_count": 917670,
+      "rev_date": "2025-12-28T06:08:05Z",
+      "scrape_date": "2025-12-29T03:51:45.871722Z",
+      "stabilities": [
+        "unstable"
+      ],
+      "unfree": false,
+      "version": "0.35.0",
+      "outputs_to_install": [
+        "out",
+        "out",
+        "out"
+      ],
+      "outputs": {
+        "dist": "/nix/store/lyppxs6l9l6cbjg42icx5vs312y8m21m-python3.12-uvicorn-0.35.0-dist",
+        "out": "/nix/store/4pnihg87m2qms9rrjgl5dr3jm6dfnhll-python3.12-uvicorn-0.35.0",
+        "testsout": "/nix/store/wqa9baqj8jspv2h5mi67kn5hdv54d45z-python3.12-uvicorn-0.35.0-testsout"
+      },
+      "system": "x86_64-linux",
+      "group": "toplevel",
+      "priority": 5
+    }
+  ]
+}
