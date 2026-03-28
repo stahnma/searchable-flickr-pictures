@@ -41,14 +41,18 @@ class Indexer:
         return entries
 
     def index_entries(self, entries: list[dict]) -> dict:
+        total = len(entries)
         indexed = 0
         skipped = 0
         errors = 0
-        for entry in entries:
+        for i, entry in enumerate(entries, 1):
+            title = entry.get("title", entry["photo_id"])
             if self.store.exists(entry["photo_id"]):
+                print(f"[{i}/{total}] Skipping (already indexed): {title}")
                 skipped += 1
                 continue
             try:
+                print(f"[{i}/{total}] Captioning: {title} ...", end="", flush=True)
                 description = self._describe_image(entry["image_url"])
                 self.store.add(
                     photo_id=entry["photo_id"],
@@ -62,14 +66,17 @@ class Indexer:
                     },
                 )
                 indexed += 1
+                print(f" done")
             except Exception as e:
-                print(f"Error indexing {entry['photo_id']}: {e}")
+                print(f" error: {e}")
                 errors += 1
         return {"indexed": indexed, "skipped": skipped, "errors": errors}
 
     def run(self, feed_url: str) -> dict:
+        print("Fetching feed...", flush=True)
         feed_content = self.fetch_feed(feed_url)
         entries = self.parse_feed(feed_content)
+        print(f"Found {len(entries)} photos")
         return self.index_entries(entries)
 
     def _describe_image(self, image_url: str) -> str:
